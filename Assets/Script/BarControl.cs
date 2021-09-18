@@ -9,9 +9,7 @@ public class BarControl : MonoBehaviour
     [SerializeField] Transform end;
     [SerializeField] Slider slider;
     float maxDistance;
-    // Start is called before the first frame update
-
-    // Update is called once per frame
+  
     void Start()
     {
         maxDistance = getDistance();
@@ -22,7 +20,7 @@ public class BarControl : MonoBehaviour
         {
             float distance = 1-(getDistance()/maxDistance);
             setProgressBar(distance);
-            //Debug.Log(distance);
+        
         }
        
     }
